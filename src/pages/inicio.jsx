@@ -1,19 +1,7 @@
-import { useNavigate } from 'react-router';
+import { Link } from 'react-router'
 import './inicio.scss'
 
 export default function Inicio() {
-
-    const navegar = useNavigate();
-
-    async function uSair() {
-        try {
-            localStorage.removeItem('token');
-            toast('Você saiu da conta.');
-            navegar('/');
-        } catch (err) {
-            toast('Erro ao sair: ' + err.message);
-        }
-    }
 
     return (
         <div className="inicio">
@@ -26,14 +14,9 @@ export default function Inicio() {
                     </p>
 
                     <div className="botoes">
-                        <a
-                            href="/projetos"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn"
-                        >
+                        <Link to="/projetos" className="btn">
                             🚀 Ver Projetos
-                        </a>
+                        </Link>
                         <a
                             href="https://wa.me/5511951008673?text=Olá%2C+vi+seu+portfólio+e+gostaria+de+conversar!"
                             target="_blank"

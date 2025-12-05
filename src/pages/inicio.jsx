@@ -29,7 +29,7 @@ export default function Inicio() {
                 </div>
 
                 <div className="imagem">
-                    <img src='/public/claudio.png' />
+                    <img src='/claudio.png' />
                 </div>
             </section>
 

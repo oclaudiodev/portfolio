@@ -1,68 +1,132 @@
-import './projetos.scss'
+import './projetos.scss';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from 'react-router';
+
 
 export default function Projetos() {
-    return (
-        <div className='projetos-page'>
-            <h1>Projetos</h1>
-            <h2>TCC(Conectando Gerações)</h2>
-            <div className='card-projeto'>
 
-                <div className='conteudo-principal'>
+    useEffect(() => {
+        AOS.init({ duration: 1200, once: true });
+    }, []);
+
+    return (
+        <div className="projetos-page">
+
+            <h1 data-aos="fade-down">Projetos</h1>
+
+            
+            <section className="card-projeto">
+
+                <h2 data-aos="fade-up">TCC (Conectando Gerações)</h2>
+
+                <div className="conteudo-principal glass" data-aos="fade-up">
                     <video src="/tcc.mp4" autoPlay muted loop controls></video>
 
-                    <div className='texto'>
+                    <div className="texto">
                         <p>
-                        Eu e meu grupo desenvolvemos o projeto Conectando Gerações, uma plataforma criada para ajudar idosos a navegar pela internet com mais segurança. O objetivo é prevenir golpes, orientar sobre práticas seguras e oferecer acesso a notícias atualizadas de forma clara e confiável.
-
-                        Além disso, a plataforma inclui uma área de cursos educativos especialmente pensados para o público idoso, ajudando-os a ganhar autonomia no ambiente digital. Também disponibilizamos um espaço de denúncia, onde o usuário pode relatar casos de golpes ou tentativas de fraude, fortalecendo a proteção e a conscientização dentro da comunidade.
-
-                        O Conectando Gerações foi criado com foco em acessibilidade, inclusão e segurança, buscando tornar a internet um lugar mais seguro para todos.
+                            Eu e meu grupo desenvolvemos o projeto Conectando Gerações, uma plataforma criada para ajudar idosos a navegar pela internet com mais segurança. O objetivo é prevenir golpes, orientar sobre práticas seguras e oferecer acesso a notícias atualizadas de forma clara e confiável.
+                            <br /><br />
+                            Inclui também cursos educativos e uma área de denúncia para fortalecer a proteção da comunidade. Focado totalmente em acessibilidade, inclusão e segurança.
                         </p>
-                        <a href="https://github.com/oclaudiodev/TCC">Projeto no github</a>
+                        <a href="https://github.com/oclaudiodev/TCC">Projeto no Github</a>
                     </div>
                 </div>
 
-                <h1>
-                    DB+Arquitetura
-                </h1>
-                <div className='detalhes'>
-                    <img src="/bdproj2.1.png" height={400} />
-                    <img src="/bdproj2.2.png" height={400} />
-                    <img src="/bdproj2.3.png" height={400} />
-                    <img src="/bdproj2.4.png" height={100} />
-                    <img src="/arqproj2.png" height={400} />
+                <h3>Banco de dados + Arquitetura</h3>
+                <div className="detalhes" data-aos="zoom-in">
+                    <img src="/bdproj2.1.png" />
+                    <img src="/bdproj2.2.png" />
+                    <img src="/bdproj2.3.png" />
+                    <img src="/bdproj2.4.png" />
+                    <img src="/arqproj2.png" />
                 </div>
-        <br />
 
                 <div className="divider"></div>
 
-                <h2>
-                    Sistema  login 
-                </h2>
+                
+                <h2 data-aos="fade-up">Sistema de Login</h2>
 
-                <div className='conteudo-principal'>
+                <div className="conteudo-principal glass" data-aos="fade-up">
                     <video src="/projeto1.mp4" autoPlay muted loop controls></video>
 
-                    <div className='texto'>
+                    <div className="texto">
                         <p>
-                            Desenvolvi um sistema completo de registro e login, integrado a um painel administrativo que permite acompanhar e gerenciar todos os usuários cadastrados. A área de administrador oferece controle total, incluindo a visualização da quantidade de pessoas que acessaram o site, proporcionando uma gestão mais eficiente e segura. O projeto foi construído com foco em desempenho, organização e boas práticas de autenticação.
+                            Desenvolvi um sistema completo de autenticação com registro, login e painel administrativo com controle de usuários. O admin pode visualizar quantas pessoas já acessaram o site.
                         </p>
-                        <a href="https://github.com/oclaudiodev/SistemaLogin">Projeto no github</a>
+                        <a href="https://github.com/oclaudiodev/SistemaLogin">Projeto no Github</a>
                     </div>
                 </div>
 
-                <h1>
-                    DB+Arquitetura
-                </h1>
-                <div className='detalhes'>
-                    <img src="/bdproj1.png" height={400} />
-                    <img src="/arqproj1.png" height={400} />
+                <h3>Banco de dados + Arquitetura</h3>
+                <div className="detalhes" data-aos="zoom-in">
+                    <img src="/bdproj1.png" />
+                    <img src="/arqproj1.png"  />
                 </div>
-                <br />
 
                 <div className="divider"></div>
 
-            </div>
+            
+                <h2 data-aos="fade-up">Feira de Profissões</h2>
+
+                <div className="conteudo-principal glass" data-aos="fade-up">
+                    <video src="/feira.mp4" autoPlay muted loop controls></video>
+
+                    <div className="texto">
+                        <p>
+                            Plataforma web desenvolvida para apresentar carreiras de forma moderna e interativa.
+                            Backend em Node.js, frontend em React, estilização em SCSS e QR Code único para cada inscrito.
+                        </p>
+                        <a href="https://github.com/oclaudiodev/feiraDeProfissoes">Projeto no Github</a>
+                    </div>
+                </div>
+
+                <h3>Banco de dados + Arquitetura</h3>
+                <div className="detalhes" data-aos="zoom-in">
+                    <img src="/bdproj3.png" />
+                    <img src="/bdproj3.1.png" />
+                    <img src="/arqproj3.png" />
+                </div>
+
+                <div className="divider"></div>
+
+                <h2 data-aos="fade-up">To-Do List</h2>
+
+                <div className="conteudo-principal glass" data-aos="fade-up">
+                    <video src="/tasks.mp4" autoPlay muted loop controls></video>
+
+                    <div className="texto">
+                        <p>
+                            Aplicação To-Do List desenvolvida com Node.js e React, implementando todas as operações CRUD – criar, editar, listar e excluir tarefas.
+                        </p>
+
+                        <p>
+                            O foco foi reforçar conceitos como API REST, banco de dados e organização de camadas.
+                        </p>
+
+                        <a href="https://github.com/oclaudiodev/tasks">Projeto no Github</a>
+                    </div>
+                </div>
+
+                <h3>Banco de dados + Arquitetura</h3>
+                <div className="detalhes" data-aos="zoom-in">
+                    <img src="/bdproj4.png" />
+                    <img src="/arqproj4.png" />
+                </div>
+
+                <div className="divider"></div>
+
+                <h1 data-aos="fade-up">Falta adicionar projetos...</h1>
+                <div className="voltarInicio" data-aos="fade-up">
+                    <Link to={"/"}>
+                        <button className="botaoVoltar">
+                            Voltar
+                        </button>
+                    </Link>
+                </div>
+                
+            </section>
         </div>
-    )
+    );
 }

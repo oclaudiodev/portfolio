@@ -15,6 +15,125 @@ body{
     color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
   
+    .habilidades {
+      text-align: center;
+      margin: 80px 0;
+      animation: fadeInSection 0.8s ease forwards;
+    
+      .neon {
+        color: #e60000;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        text-shadow: 0 0 8px #e60000;
+        animation: neonPulse 2s infinite ease-in-out;
+      }
+    
+      .icons {
+        display: flex;
+        gap: 25px;
+        justify-items: center;
+        margin-top: 40px;
+        width: 100%;
+      }
+    
+      .item {
+        background: #151515;
+        border: 2px solid #222;
+        padding: 12px;               
+        height:80px;                
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.9rem;            
+        color: #fff;
+        transition: 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+        gap: 6px;
+    
+        svg {
+          font-size: 2rem;
+          color: #e60000;
+          transition: 0.3s ease;
+        }
+    
+        &:hover {
+          transform: translateY(-8px) scale(1.08);
+        }
+    
+        &:hover {
+          transform: translateY(-10px) scale(1.08);
+          border-color: #e60000;
+          box-shadow: 0 0 15px rgba(229, 0, 0, 0.8);
+        }
+      }
+    
+      .item.html:hover svg { animation: htmlFloat 0.6s ease; }
+      .item.css:hover svg { animation: cssSpin 0.6s linear; }
+      .item.js:hover svg { animation: jsShake 0.4s; }
+      .item.react:hover svg { animation: reactSpin 1s linear; }
+      .item.node:hover svg { animation: nodePulse .6s ease-in-out; }
+      .item.mysql:hover svg { animation: mysqlSwing .6s ease-in-out; }
+      .item.scss:hover svg { animation: scssGlow .8s ease-in-out; }
+    
+      @keyframes fadeInSection {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    
+      @keyframes techAppear {
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+    
+      @keyframes neonPulse {
+        0%, 100% { text-shadow: 0 0 8px #e60000; }
+        50% { text-shadow: 0 0 15px #ff3b3b; }
+      }
+    
+      /* seus keyframes */
+      @keyframes htmlFloat {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+        100% { transform: translateY(0); }
+      }
+    
+      @keyframes cssSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    
+      @keyframes jsShake {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(4px); }
+        100% { transform: translateX(0); }
+      }
+    
+      @keyframes reactSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    
+      @keyframes nodePulse {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.2); }
+      }
+    
+      @keyframes mysqlSwing {
+        0% { transform: rotate(-5deg); }
+        100% { transform: rotate(5deg); }
+      }
+    
+      @keyframes scssGlow {
+        0% { filter: drop-shadow(0 0 5px #e60000); }
+        100% { filter: drop-shadow(0 0 15px #ff1a1a); }
+      }
+    }
     
   
   
@@ -82,13 +201,34 @@ body{
       }
   
       .imagem {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    
         img {
-          width: 250px;
-          border-radius: 50%;
-          box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
-          margin-top: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    
+            clip-path: polygon(
+                25% 5%,
+                75% 5%,
+                100% 50%,
+                75% 95%,
+                25% 95%,
+                0% 50%
+            );
+            
         }
-      }
+        
+    }
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+    padding: 20px;
+    border-radius: 25px;
+    
     }
   
     .projetos {
@@ -161,9 +301,17 @@ body{
       }
     }
   
-    /* ======== RESPONSIVIDADE ======== */
   
     @media (max-width: 1024px) {
+      .icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-items: center;
+        margin-top: 40px;
+        width: 100%;
+        justify-content: center;
+      }
       .apresentacao {
         flex-direction: column;
         text-align: center;
@@ -184,11 +332,12 @@ body{
           }
         }
   
-        .imagem img {
+        
+        img {
           width: 220px;
           margin-top: 30px;
         }
-      }
+      
   
       .projetos .cards {
         gap: 15px;
@@ -261,3 +410,4 @@ body{
       }
     }
   }
+}

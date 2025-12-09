@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .projetos-page {
-  overflow-x: hidden;
+  overflow-x: clip;
   margin: 0;
   width: 100%;
   color: white;
@@ -56,6 +60,8 @@
     grid-template-columns: minmax(0, 55%) minmax(0, 45%);
     align-items: center;
     gap: 40px;
+    width: 100%;
+    overflow: hidden; 
 
     video {
       width: 100%;

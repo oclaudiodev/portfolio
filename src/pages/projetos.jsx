@@ -22,7 +22,7 @@ export default function Projetos() {
                 <h2 data-aos="fade-up">TCC (Conectando Gerações)</h2>
 
                 <div className="conteudo-principal glass" data-aos="fade-up">
-                    <video src="/tcc.mp4" autoPlay muted loop controls></video>
+                    <video src="/tcc.mp4" controls muted preload="none"></video>
 
                     <div className="texto">
                         <p>
@@ -49,7 +49,7 @@ export default function Projetos() {
                 <h2 data-aos="fade-up">Sistema de Login</h2>
 
                 <div className="conteudo-principal glass" data-aos="fade-up">
-                    <video src="/projeto1.mp4" autoPlay muted loop controls></video>
+                    <video src="/projeto1.mp4" controls muted preload="none"></video>
 
                     <div className="texto">
                         <p>
@@ -71,7 +71,7 @@ export default function Projetos() {
                 <h2 data-aos="fade-up">Feira de Profissões</h2>
 
                 <div className="conteudo-principal glass" data-aos="fade-up">
-                    <video src="/feira.mp4" autoPlay muted loop controls></video>
+                    <video src="/feira.mp4" controls muted preload="none"></video>
 
                     <div className="texto">
                         <p>
@@ -94,7 +94,7 @@ export default function Projetos() {
                 <h2 data-aos="fade-up">To-Do List</h2>
 
                 <div className="conteudo-principal glass" data-aos="fade-up">
-                    <video src="/tasks.mp4" autoPlay muted loop controls></video>
+                    <video src="/tasks.mp4" controls muted preload="none"></video>
 
                     <div className="texto">
                         <p>

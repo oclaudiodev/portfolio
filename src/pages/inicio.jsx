@@ -1,5 +1,7 @@
 import { Link } from 'react-router'
 import './inicio.scss'
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSass } from "react-icons/fa";
+import { SiJavascript, SiMysql } from "react-icons/si";
 
 export default function Inicio() {
 
@@ -12,6 +14,22 @@ export default function Inicio() {
                     <p>
                         Transformo ideias em soluções completas. Desenvolvo aplicações do front ao back-end, unindo design intuitivo e arquitetura robusta. Utilizo tecnologias como <strong>React</strong>, <strong>Node.js Express</strong>, <strong>MySQL </strong> e <strong>SCSS</strong>, sempre com foco em performance, escalabilidade e experiência do usuário.
                     </p>
+
+                    <section className="habilidades">
+                        <h2 className="neon">Tecnologias que Utilizo</h2>
+
+                        <div className="icons">
+                            <div className="item html"><FaHtml5 /> HTML</div>
+                            <div className="item css"><FaCss3Alt /> CSS</div>
+                            <div className="item js"><SiJavascript /> JavaScript</div>
+                            <div className="item react"><FaReact /> React</div>
+                            <div className="item node"><FaNodeJs /> Node.js</div>
+                            <div className="item mysql"><SiMysql /> MySQL</div>
+                            <div className="item scss"><FaSass /> SCSS</div>
+                        </div>
+
+                    </section>
+
 
                     <div className="botoes">
                         <Link to="/projetos" className="btn">
@@ -27,10 +45,12 @@ export default function Inicio() {
                         </a>
                     </div>
                 </div>
-
-                <div className="imagem">
+                <div className='ajuste'>
+                    <div className="imagem">
                     <img src='/claudio.png' />
                 </div>
+                </div>
+                
             </section>
 
             <section id="projetos" className="projetos">

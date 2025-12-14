@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import './inicio.scss'
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaSass, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiJavascript, SiMysql } from "react-icons/si";
 
 export default function Inicio() {
@@ -26,6 +26,8 @@ export default function Inicio() {
                             <div className="item node"><FaNodeJs /> Node.js</div>
                             <div className="item mysql"><SiMysql /> MySQL</div>
                             <div className="item scss"><FaSass /> SCSS</div>
+                            <div className="item git"><FaGitAlt /> Git</div>
+                            <div className="item github"><FaGithub /> GitHub</div>
                         </div>
 
                     </section>
@@ -47,10 +49,10 @@ export default function Inicio() {
                 </div>
                 <div className='ajuste'>
                     <div className="imagem">
-                    <img src='/claudio.png' />
+                        <img src='/claudio.png' />
+                    </div>
                 </div>
-                </div>
-                
+
             </section>
 
             <section id="projetos" className="projetos">

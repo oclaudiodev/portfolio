@@ -117,7 +117,7 @@ export default function Projetos() {
 
                 <div className="divider"></div>
 
-                <h1 data-aos="fade-up">Falta adicionar projetos...</h1>
+                <h1 data-aos="fade-up">Novos projetos hão de vir em uma nova atualização…</h1>
                 <div className="voltarInicio" data-aos="fade-up">
                     <Link to={"/"}>
                         <button className="botaoVoltar">

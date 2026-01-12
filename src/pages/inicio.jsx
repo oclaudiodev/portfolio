@@ -49,7 +49,7 @@ export default function Inicio() {
                 </div>
                 <div className='ajuste'>
                     <div className="imagem">
-                        <img src='/claudio.png' />
+                        <img src='/claudio.jpg' />
                     </div>
                 </div>
 

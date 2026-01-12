@@ -34,7 +34,7 @@ export default function Inicio() {
 
 
                     <div className="botoes">
-                        <Link to="/projetos" className="btn">
+                        <Link to="/projetos" className="btn" onClick={() => window.scrollTo(0, 0)}>
                             🚀 Ver Projetos
                         </Link>
                         <a

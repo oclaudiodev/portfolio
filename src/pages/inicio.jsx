@@ -60,11 +60,11 @@ export default function Inicio() {
                 <div className="cards">
                     <div className="card">
                         <h3>Sistema de Login e Registrar</h3>
-                        <p>Sistema desenvolvido para conseguir administrar quantas pessosas se registrou no site</p>
+                        <p>Sistema desenvolvido para administrar, monitorar e organizar os registros de usuários no site, permitindo o controle preciso do número de pessoas cadastradas.</p>
                     </div>
                     <div className="card">
-                        <h3>To Do List</h3>
-                        <p>Projeto feito para criar tarefas, atualizar ou deleta-las após concluídas.</p>
+                        <h3>Sistema To Do List</h3>
+                        <p>Sistema desenvolvido para organizar tarefas, possibilitando a criação, atualização e remoção de atividades após sua conclusão.</p>
                     </div>
                     <div className="card">
                         <h3>Conectando Gerações (TCC T.I)</h3>
